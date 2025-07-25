@@ -63,7 +63,9 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "@capacitor/core": "^5.0.3"
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+
   },
   "capacitor": {
     "android": {

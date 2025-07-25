@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "allowUnreachableCode": false,
+    "skipLibCheck": true,
     "declaration": true,
     "esModuleInterop": true,
     "inlineSources": true,
-    "lib": ["dom", "es2022"],
+    "lib": ["dom", "ESNext"],
+    "types": ["node"],
     "module": "esnext",
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
