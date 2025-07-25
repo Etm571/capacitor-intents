@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-intents-repo",
-  "private": true,
+  "name": "capacitor-intents-capacitor6",
+  "private": false,
   "scripts": {
     "build": "pnpm turbo build",
     "fmt": "pnpm turbo fmt",

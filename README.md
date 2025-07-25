@@ -2,16 +2,16 @@
 
 Simple intent tools for Capacitor on Android platform.
 
+> **Note:** This is a fork of [https://github.com/IT-MikeS/capacitor-intents](https://github.com/IT-MikeS/capacitor-intents) with support on Capacitor 6.
+
 ## Install
 
 ```bash
-npm install capacitor-android-intents
+npm i capacitor-android-intents-capacitor6
 npx cap sync
 ```
 
 ## Usage
-
-See `example-app` in `packages` folder.
 
 ## API
 
@@ -24,19 +24,20 @@ See `example-app` in `packages` folder.
 </docgen-index>
 
 <docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
 ### registerBroadcastReceiver(...)
 
 ```typescript
-registerBroadcastReceiver(options: { filters: string[]; }, callback: (data: { [key: string]: any; }) => void) => any
+registerBroadcastReceiver(options: { filters: string[]; }, callback: (data: { [key: string]: any; }) => void) => Promise<string>
 ```
 
 | Param          | Type                                                    |
 | -------------- | ------------------------------------------------------- |
-| **`options`**  | <code>{ filters: {}; }</code>                           |
+| **`options`**  | <code>{ filters: string[]; }</code>                     |
 | **`callback`** | <code>(data: { [key: string]: any; }) =&gt; void</code> |
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;string&gt;</code>
 
 --------------------
 
@@ -44,14 +45,12 @@ registerBroadcastReceiver(options: { filters: string[]; }, callback: (data: { [k
 ### unregisterBroadcastReceiver(...)
 
 ```typescript
-unregisterBroadcastReceiver(options: { id: string; }) => any
+unregisterBroadcastReceiver(options: { id: string; }) => Promise<void>
 ```
 
 | Param         | Type                         |
 | ------------- | ---------------------------- |
 | **`options`** | <code>{ id: string; }</code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -59,14 +58,12 @@ unregisterBroadcastReceiver(options: { id: string; }) => any
 ### sendBroadcastIntent(...)
 
 ```typescript
-sendBroadcastIntent(options: { action: string; value: { [key: string]: any; }; }) => any
+sendBroadcastIntent(options: { action: string; value: { [key: string]: any; }; }) => Promise<void>
 ```
 
 | Param         | Type                                                             |
 | ------------- | ---------------------------------------------------------------- |
 | **`options`** | <code>{ action: string; value: { [key: string]: any; }; }</code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
