@@ -2,6 +2,8 @@
 
 Simple intent tools for Capacitor on Android platform.
 
+> **Note:** This is a fork of [https://github.com/IT-MikeS/capacitor-intents](https://github.com/IT-MikeS/capacitor-intents) with support on Capacitor 6.
+
 ## Install
 
 ```bash
